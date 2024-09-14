@@ -1,0 +1,31 @@
+{
+  "name": "dotnet-monorepo",
+  "version": "0.0.1",
+  "description": ".NET Monorepo starter project with Nx",
+  "author": "Patrick Ineichen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/froko/dotnet-monorepo.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prepare": "nx g @nx-dotnet/core:restore",
+    "format": "prettier . --write && nx run-many -t format --parallel",
+    "affected": "nx affected -t lint,build,test",
+    "all": "nx run-many -t lint,build,test",
+    "lint": "nx run-many -t lint --parallel",
+    "build": "nx run-many -t build --parallel",
+    "test": "nx run-many -t test",
+    "release": "semantic-release"
+  },
+  "devDependencies": {
+    "@droidsolutions-oss/semantic-release-update-file": "^1.4.0",
+    "@nx-dotnet/core": "^2.4.5",
+    "@nx/js": "19.6.6",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "nx": "^19.6.6",
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.1.0"
+  }
+}

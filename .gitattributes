@@ -1,0 +1,108 @@
+# Common settings that generally should always be used with your language specific settings
+
+# Auto detect text files and perform LF normalization
+*          text=auto
+
+#
+# The above will handle all files NOT found below
+#
+
+# Documents
+*.md       text diff=markdown linguist-detectable
+*.mdx      text diff=markdown linguist-detectable
+
+# Graphics
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.tif      binary
+*.tiff     binary
+*.ico      binary
+*.webp     binary
+
+# Audio
+*.kar      binary
+*.m4a      binary
+*.mid      binary
+*.midi     binary
+*.mp3      binary
+*.ogg      binary
+*.ra       binary
+
+# Video
+*.3gpp     binary
+*.3gp      binary
+*.as       binary
+*.asf      binary
+*.asx      binary
+*.avi      binary
+*.fla      binary
+*.flv      binary
+*.m4v      binary
+*.mng      binary
+*.mov      binary
+*.mp4      binary
+*.mpeg     binary
+*.mpg      binary
+*.ogv      binary
+*.swc      binary
+*.swf      binary
+*.webm     binary
+
+# Archives
+*.7z       binary
+*.gz       binary
+*.jar      binary
+*.rar      binary
+*.tar      binary
+*.zip      binary
+
+# Fonts
+*.ttf      binary
+*.eot      binary
+*.otf      binary
+*.woff     binary
+*.woff2    binary
+
+# Scripts
+*.sh       text eol=lf
+*.bat      text eol=crlf
+*.cmd      text eol=crlf
+*.ps1      text eol=crlf
+
+
+#
+# Web projets
+#
+*.css      text diff=css
+*.htm      text diff=html
+*.html     text diff=html
+*.scss     text diff=css
+*.xhtml    text diff=html
+
+package.json      text eol=lf
+pnpm-lock.yaml    text eol=lf -diff
+tsconfig.json     linguist-language=JSON-with-Comments
+
+
+#
+# DotNet
+#
+*.cs       text diff=csharp
+*.csproj   text eol=crlf
+*.fsproj   text eol=crlf
+*.sln      text eol=crlf
+
+
+#
+# Misc
+#
+.husky/*            text eol=lf
+.vscode/*.json      linguist-language=JSON-with-Comments
+
+.devcontainer.json  linguist-language=JSON-with-Comments
+devcontainer.json   linguist-language=JSON-with-Comments
+
+CHANGELOG.md        export-ignore
+renovate.json       export-ignore
