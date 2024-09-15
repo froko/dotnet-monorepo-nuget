@@ -47,19 +47,6 @@ jobs:
           version: 9
           run_install: false
 
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
       - name: Install dependencies
         run: pnpm install
 
@@ -72,7 +59,7 @@ jobs:
         run: pnpm nuget
 
       - name: Upload Artifacts
-        uses: actions/upload-artifacts@v2
+        uses: actions/upload-artifact@v4
         with:
           name: nugetPackages
           path: dist/packages/
@@ -82,12 +69,12 @@ jobs:
     needs: release
     steps:
       - name: Download Artifacts
-        uses: actions/downloadArtifact@v1
+        uses: actions/download-artifact@v4
         with:
           name: nugetPackages
 
-      - name: Add NuGet source
-        run: dotnet nuget add source --username froko --password ${{ secrets.NUGET_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/froko/index.json"
-
       - name: Push NuGet packages
-        run: dotnet nuget push nugetPackage/*.nupkg --api-key ${{ secrets.NUGET_TOKEN }}  --source "github"
+        run: dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_TOKEN }} --source https://api.nuget.org/v3/index.json --no-symbols
+
+      - name: Push NuGet Symbol packages
+        run: dotnet nuget push *.snupkg --api-key ${{ secrets.NUGET_TOKEN }} --source https://api.nuget.org/v3/index.json
