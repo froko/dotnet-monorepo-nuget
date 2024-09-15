@@ -1,0 +1,10 @@
+{
+  "targets": {
+    "pack": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "dotnet pack packages/CommonLib.sln -c Release -o dist/packages"
+      }
+    }
+  }
+}

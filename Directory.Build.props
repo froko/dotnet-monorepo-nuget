@@ -19,6 +19,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <PropertyGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <Icon>./icon.png</Icon>
+    <Authors>Patrick Ineichen</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+  <PropertyGroup>
     <Version>1.0.0</Version>
   </PropertyGroup>
   <PropertyGroup>

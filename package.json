@@ -16,6 +16,7 @@
     "lint": "nx run-many -t lint --parallel",
     "build": "nx run-many -t build --parallel",
     "test": "nx run-many -t test",
+    "nuget": "nx run-many -t pack --parallel",
     "release": "semantic-release"
   },
   "devDependencies": {
