@@ -1,6 +1,6 @@
 {
   "name": "dotnet-monorepo-nuget",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": ".NET MonoRepo NuGet playground",
   "author": "Patrick Ineichen",
   "repository": {
