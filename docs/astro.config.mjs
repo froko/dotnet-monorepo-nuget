@@ -10,9 +10,9 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      title: 'dotnet-monorepo',
+      title: 'dotnet-monorepo-nuget',
       social: {
-        github: 'https://github.com/froko/dotnet-monorepo'
+        github: 'https://github.com/froko/dotnet-monorepo-nuget'
       },
       sidebar: [
         {

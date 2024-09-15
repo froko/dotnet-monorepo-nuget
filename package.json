@@ -1,11 +1,11 @@
 {
-  "name": "dotnet-monorepo",
+  "name": "dotnet-monorepo-nuget",
   "version": "0.0.1",
-  "description": ".NET Monorepo starter project with Nx",
+  "description": ".NET MonoRepo NuGet playground",
   "author": "Patrick Ineichen",
   "repository": {
     "type": "git",
-    "url": "https://github.com/froko/dotnet-monorepo.git"
+    "url": "https://github.com/froko/dotnet-monorepo-nuget.git"
   },
   "license": "MIT",
   "scripts": {
