@@ -1,18 +1,23 @@
 {
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["format", "lint", "build", "test"]
-      }
+      "runner": "nx/tasks-runners/default"
     }
   },
   "targetDefaults": {
+    "format": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
     "build": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "cache": true
     },
     "test": {
-      "dependsOn": ["build"]
+      "dependsOn": ["build"],
+      "cache": true
     }
   },
   "plugins": ["@nx-dotnet/core"]
