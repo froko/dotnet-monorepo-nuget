@@ -59,7 +59,7 @@ jobs:
 
       - name: Publish Test Results
         if: ${{ hashFiles('dist/test-results/') != '' }}
-        uses: bibipkins/dotnet-test-reporter@v1.4.1
+        uses: bibipkins/dotnet-test-reporter@v1.5.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           comment-title: 'Unit Test Results'
