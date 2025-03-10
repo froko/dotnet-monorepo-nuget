@@ -13,10 +13,10 @@ importers:
         version: 1.4.0
       '@nx-dotnet/core':
         specifier: ^2.4.5
-        version: 2.5.0(@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.22)(nx@19.8.14)(typescript@5.8.2))(nx@19.8.14)(prettier@3.5.3)
+        version: 2.5.0(@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.24)(nx@19.8.14)(typescript@5.8.2))(nx@19.8.14)(prettier@3.5.3)
       '@nx/js':
         specifier: 19.8.14
-        version: 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.22)(nx@19.8.14)(typescript@5.8.2)
+        version: 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.24)(nx@19.8.14)(typescript@5.8.2)
       '@semantic-release/changelog':
         specifier: ^6.0.3
         version: 6.0.3(semantic-release@24.2.3(typescript@5.8.2))
@@ -43,10 +43,10 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.8.2)
       '@astrojs/starlight':
         specifier: ^0.32.0
-        version: 0.32.2(astro@4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2))
+        version: 0.32.2(astro@4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2))
       astro:
         specifier: ^4.11.5
-        version: 4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2)
+        version: 4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2)
       sharp:
         specifier: ^0.33.4
         version: 0.33.5
@@ -56,7 +56,7 @@ importers:
     devDependencies:
       '@types/node':
         specifier: '20'
-        version: 20.17.22
+        version: 20.17.24
       prettier-plugin-astro:
         specifier: ^0.14.0
         version: 0.14.1
@@ -1475,8 +1475,8 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/node@20.17.22':
-    resolution: {integrity: sha512-9RV2zST+0s3EhfrMZIhrz2bhuhBwxgkbHEwP2gtGWPjBzVQjifMzJ9exw7aDZhR1wbpj8zBrfp3bo8oJcGiUUw==}
+  '@types/node@20.17.24':
+    resolution: {integrity: sha512-d7fGCyB96w9BnWQrOsJtpyiSaBcAYYr75bnK6ZRjDbql2cGLj/3GsL5OYmLPNq76l7Gf2q4Rv9J2o6h5CrD9sA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -4552,12 +4552,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.1.0(astro@4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2))':
+  '@astrojs/mdx@4.1.0(astro@4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2))':
     dependencies:
       '@astrojs/markdown-remark': 6.2.0
       '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       acorn: 8.14.0
-      astro: 4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2)
+      astro: 4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2)
       es-module-lexer: 1.6.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -4585,16 +4585,16 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.2
 
-  '@astrojs/starlight@0.32.2(astro@4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2))':
+  '@astrojs/starlight@0.32.2(astro@4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2))':
     dependencies:
-      '@astrojs/mdx': 4.1.0(astro@4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2))
+      '@astrojs/mdx': 4.1.0(astro@4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2))
       '@astrojs/sitemap': 3.2.1
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2)
-      astro-expressive-code: 0.40.2(astro@4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2))
+      astro: 4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2)
+      astro-expressive-code: 0.40.2(astro@4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.4
@@ -5644,9 +5644,9 @@ snapshots:
     transitivePeerDependencies:
       - nx
 
-  '@nrwl/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.22)(nx@19.8.14)(typescript@5.8.2)':
+  '@nrwl/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.24)(nx@19.8.14)(typescript@5.8.2)':
     dependencies:
-      '@nx/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.22)(nx@19.8.14)(typescript@5.8.2)
+      '@nx/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.24)(nx@19.8.14)(typescript@5.8.2)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@swc-node/register'
@@ -5676,7 +5676,7 @@ snapshots:
       - '@swc/core'
       - debug
 
-  '@nx-dotnet/core@2.5.0(@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.22)(nx@19.8.14)(typescript@5.8.2))(nx@19.8.14)(prettier@3.5.3)':
+  '@nx-dotnet/core@2.5.0(@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.24)(nx@19.8.14)(typescript@5.8.2))(nx@19.8.14)(prettier@3.5.3)':
     dependencies:
       '@nx-dotnet/dotnet': 2.5.0(nx@19.8.14)
       '@nx-dotnet/utils': 2.5.0(nx@19.8.14)
@@ -5691,7 +5691,7 @@ snapshots:
       xmldoc: 1.3.0
       yargs-parser: 21.1.1
     optionalDependencies:
-      '@nx/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.22)(nx@19.8.14)(typescript@5.8.2)
+      '@nx/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.24)(nx@19.8.14)(typescript@5.8.2)
       prettier: 3.5.3
 
   '@nx-dotnet/dotnet@2.5.0(nx@19.8.14)':
@@ -5738,7 +5738,7 @@ snapshots:
       tslib: 2.8.1
       yargs-parser: 21.1.1
 
-  '@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.22)(nx@19.8.14)(typescript@5.8.2)':
+  '@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.24)(nx@19.8.14)(typescript@5.8.2)':
     dependencies:
       '@babel/core': 7.26.8
       '@babel/plugin-proposal-decorators': 7.25.9(@babel/core@7.26.8)
@@ -5747,7 +5747,7 @@ snapshots:
       '@babel/preset-env': 7.26.8(@babel/core@7.26.8)
       '@babel/preset-typescript': 7.26.0(@babel/core@7.26.8)
       '@babel/runtime': 7.26.7
-      '@nrwl/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.22)(nx@19.8.14)(typescript@5.8.2)
+      '@nrwl/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.24)(nx@19.8.14)(typescript@5.8.2)
       '@nx/devkit': 19.8.14(nx@19.8.14)
       '@nx/workspace': 19.8.14
       babel-plugin-const-enum: 1.2.0(@babel/core@7.26.8)
@@ -5767,7 +5767,7 @@ snapshots:
       ora: 5.3.0
       semver: 7.7.1
       source-map-support: 0.5.19
-      ts-node: 10.9.1(@types/node@20.17.22)(typescript@5.8.2)
+      ts-node: 10.9.1(@types/node@20.17.24)(typescript@5.8.2)
       tsconfig-paths: 4.2.0
       tslib: 2.8.1
     transitivePeerDependencies:
@@ -6191,7 +6191,7 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
-  '@types/node@20.17.22':
+  '@types/node@20.17.24':
     dependencies:
       undici-types: 6.19.8
 
@@ -6201,7 +6201,7 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 20.17.22
+      '@types/node': 20.17.24
 
   '@types/unist@2.0.11': {}
 
@@ -6353,12 +6353,12 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.40.2(astro@4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2)):
+  astro-expressive-code@0.40.2(astro@4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2)):
     dependencies:
-      astro: 4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2)
+      astro: 4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2)
       rehype-expressive-code: 0.40.2
 
-  astro@4.16.18(@types/node@20.17.22)(rollup@4.34.6)(typescript@5.8.2):
+  astro@4.16.18(@types/node@20.17.24)(rollup@4.34.6)(typescript@5.8.2):
     dependencies:
       '@astrojs/compiler': 2.10.4
       '@astrojs/internal-helpers': 0.4.1
@@ -6414,8 +6414,8 @@ snapshots:
       tsconfck: 3.1.5(typescript@5.8.2)
       unist-util-visit: 5.0.0
       vfile: 6.0.3
-      vite: 5.4.14(@types/node@20.17.22)
-      vitefu: 1.0.5(vite@5.4.14(@types/node@20.17.22))
+      vite: 5.4.14(@types/node@20.17.24)
+      vitefu: 1.0.5(vite@5.4.14(@types/node@20.17.24))
       which-pm: 3.0.1
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
@@ -9328,14 +9328,14 @@ snapshots:
 
   trough@2.2.0: {}
 
-  ts-node@10.9.1(@types/node@20.17.22)(typescript@5.8.2):
+  ts-node@10.9.1(@types/node@20.17.24)(typescript@5.8.2):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.17.22
+      '@types/node': 20.17.24
       acorn: 8.14.0
       acorn-walk: 8.3.4
       arg: 4.1.3
@@ -9507,18 +9507,18 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@5.4.14(@types/node@20.17.22):
+  vite@5.4.14(@types/node@20.17.24):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.1
       rollup: 4.34.6
     optionalDependencies:
-      '@types/node': 20.17.22
+      '@types/node': 20.17.24
       fsevents: 2.3.3
 
-  vitefu@1.0.5(vite@5.4.14(@types/node@20.17.22)):
+  vitefu@1.0.5(vite@5.4.14(@types/node@20.17.24)):
     optionalDependencies:
-      vite: 5.4.14(@types/node@20.17.22)
+      vite: 5.4.14(@types/node@20.17.24)
 
   volar-service-css@0.0.62(@volar/language-service@2.4.11):
     dependencies:
