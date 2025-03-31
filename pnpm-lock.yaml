@@ -13,10 +13,10 @@ importers:
         version: 1.4.0
       '@nx-dotnet/core':
         specifier: ^2.4.5
-        version: 2.5.0(@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.27)(nx@19.8.14)(typescript@5.8.2))(nx@19.8.14)(prettier@3.5.3)
+        version: 2.5.0(@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.28)(nx@19.8.14)(typescript@5.8.2))(nx@19.8.14)(prettier@3.5.3)
       '@nx/js':
         specifier: 19.8.14
-        version: 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.27)(nx@19.8.14)(typescript@5.8.2)
+        version: 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.28)(nx@19.8.14)(typescript@5.8.2)
       '@semantic-release/changelog':
         specifier: ^6.0.3
         version: 6.0.3(semantic-release@24.2.3(typescript@5.8.2))
@@ -43,10 +43,10 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.8.2)
       '@astrojs/starlight':
         specifier: ^0.32.0
-        version: 0.32.4(astro@4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2))
+        version: 0.32.5(astro@4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2))
       astro:
         specifier: ^4.11.5
-        version: 4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2)
+        version: 4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2)
       sharp:
         specifier: ^0.33.4
         version: 0.33.5
@@ -56,7 +56,7 @@ importers:
     devDependencies:
       '@types/node':
         specifier: '20'
-        version: 20.17.27
+        version: 20.17.28
       prettier-plugin-astro:
         specifier: ^0.14.0
         version: 0.14.1
@@ -103,8 +103,8 @@ packages:
   '@astrojs/markdown-remark@6.3.1':
     resolution: {integrity: sha512-c5F5gGrkczUaTVgmMW9g1YMJGzOtRvjjhw6IfGuxarM6ct09MpwysP10US729dy07gg8y+ofVifezvP3BNsWZg==}
 
-  '@astrojs/mdx@4.2.1':
-    resolution: {integrity: sha512-huVIR6YNtdJ233swDwj4RWCjhpUtz8wTLybPPZi5tdBFxwahMRYcGtGVEHjyUE9z+Je2LUVgQTzrPgvJi53oOQ==}
+  '@astrojs/mdx@4.2.2':
+    resolution: {integrity: sha512-nWDvuCPenxoxbog3YK3yVWF3Jw7Lq1+ziWSAOc9fy6zAUbPDSr2bt3c6r6+oa1ll0miCQByj5UVts6eJvN/y+g==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       astro: ^5.0.0
@@ -120,8 +120,8 @@ packages:
   '@astrojs/sitemap@3.3.0':
     resolution: {integrity: sha512-nYE4lKQtk+Kbrw/w0G0TTgT724co0jUsU4tPlHY9au5HmTBKbwiCLwO/15b1/y13aZ4Kr9ZbMeMHlXuwn0ty4Q==}
 
-  '@astrojs/starlight@0.32.4':
-    resolution: {integrity: sha512-l6aHQ4wzFPdw2G2XPqft/SrzhOYWYBYPkIHlLdgFT09Lt3NUpHnHwdcomtDJfHPlvrAqBKt/C+aJqQjLBApu0Q==}
+  '@astrojs/starlight@0.32.5':
+    resolution: {integrity: sha512-KYZsYbA5eEAsCO3XNc6DWDPml1JCD6GVusuB15fYq5dbxyB7RtC6kgwbtiEmr84maIjcQUmDtFJCz3sN4CdaSg==}
     peerDependencies:
       astro: ^5.1.5
 
@@ -649,12 +649,12 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@babel/runtime@7.26.10':
-    resolution: {integrity: sha512-2WJMeRQPHKSPemqk/awGrAiuFfzBmOIPXKizAsVhWH9YJqLZ0H+HS4c8loHGgW6utJ3E/ejXQUsiGaQy2NZ9Fw==}
-    engines: {node: '>=6.9.0'}
-
   '@babel/runtime@7.26.7':
     resolution: {integrity: sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.27.0':
+    resolution: {integrity: sha512-VtPOkrdPHZsKc/clNqyi9WUA8TINkZ4cGk63UUE3u4pmB2k+ZMQRDuIOagv8UVd6j7k0T3+RRIb7beKTebNbcw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.26.8':
@@ -1445,9 +1445,6 @@ packages:
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
 
-  '@types/acorn@4.0.6':
-    resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
-
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
 
@@ -1499,8 +1496,8 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/node@20.17.27':
-    resolution: {integrity: sha512-U58sbKhDrthHlxHRJw7ZLiLDZGmAUOZUbpw0S6nL27sYUdhvgBLCRu/keSd6qcTsfArd1sRFCCBxzWATGr/0UA==}
+  '@types/node@20.17.28':
+    resolution: {integrity: sha512-DHlH/fNL6Mho38jTy7/JT7sn2wnXI+wULR6PV4gy4VHLVvnrV/d3pHAMQHhc4gjdLmK2ZiPoMxzp6B3yRajLSQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2986,11 +2983,11 @@ packages:
   micromark-extension-gfm@3.0.0:
     resolution: {integrity: sha512-vsKArQsicm7t0z2GugkCKtZehqUm31oeGBV/KVSorWSy8ZlNAv7ytjFhvaryUiCUJYqs+NoE6AFhpQvBTM6Q4w==}
 
-  micromark-extension-mdx-expression@3.0.0:
-    resolution: {integrity: sha512-sI0nwhUDz97xyzqJAbHQhp5TfaxEvZZZ2JDqUo+7NvyIYG6BZ5CPPqj2ogUoPJlmXHBnyZUzISg9+oUmU6tUjQ==}
+  micromark-extension-mdx-expression@3.0.1:
+    resolution: {integrity: sha512-dD/ADLJ1AeMvSAKBwO22zG22N4ybhe7kFIZ3LsDI0GlsNr2A3KYxb0LdC1u5rj4Nw+CHKY0RVdnHX8vj8ejm4Q==}
 
-  micromark-extension-mdx-jsx@3.0.1:
-    resolution: {integrity: sha512-vNuFb9czP8QCtAQcEJn0UJQJZA8Dk6DXKBqx+bg/w0WGuSxDxNr7hErW89tHUY31dUW4NqEOWwmEUNhjTFmHkg==}
+  micromark-extension-mdx-jsx@3.0.2:
+    resolution: {integrity: sha512-e5+q1DjMh62LZAJOnDraSSbDMvGJ8x3cbjygy2qFEi7HCeUT4BDKCvMozPozcD6WmOt6sVvYDNBKhFSz3kjOVQ==}
 
   micromark-extension-mdx-md@2.0.0:
     resolution: {integrity: sha512-EpAiszsB3blw4Rpba7xTOUptcFeBFi+6PY8VnJ2hhimH+vCQDirWgsMpz7w1XcZE7LVrSAUGb9VJpG9ghlYvYQ==}
@@ -3007,8 +3004,8 @@ packages:
   micromark-factory-label@2.0.1:
     resolution: {integrity: sha512-VFMekyQExqIW7xIChcXn4ok29YE3rnuyveW3wZQWWqF4Nv9Wk5rgJ99KzPvHjkmPXF93FXIbBp6YdW3t71/7Vg==}
 
-  micromark-factory-mdx-expression@2.0.2:
-    resolution: {integrity: sha512-5E5I2pFzJyg2CtemqAbcyCktpHXuJbABnsb32wX2U8IQKhhVFBqkcZR5LRm1WVoFqa4kTueZK4abep7wdo9nrw==}
+  micromark-factory-mdx-expression@2.0.3:
+    resolution: {integrity: sha512-kQnEtA3vzucU2BkrIa8/VaSAsP+EJ3CKOvhMuJgOEGg9KDC6OAY6nSnNDVRiVNRqj7Y4SlSzcStaH/5jge8JdQ==}
 
   micromark-factory-space@2.0.1:
     resolution: {integrity: sha512-zRkxjtBxxLd2Sc0d+fbnEunsTj46SWXgXciZmHq0kDYGnck/ZSGj9/wULTV95uoeYiK5hRXP2mJ98Uo4cq/LQg==}
@@ -3040,8 +3037,8 @@ packages:
   micromark-util-encode@2.0.1:
     resolution: {integrity: sha512-c3cVx2y4KqUnwopcO9b/SCdo2O67LwJJ/UyqGfbigahfegL9myoEFoDYZgkT7f36T0bLrM9hZTAaAyH+PCAXjw==}
 
-  micromark-util-events-to-acorn@2.0.2:
-    resolution: {integrity: sha512-Fk+xmBrOv9QZnEDguL9OI9/NQQp6Hz4FuQ4YmCb/5V7+9eAh1s6AYSvL20kHkD67YIg7EpE54TiSlcsf3vyZgA==}
+  micromark-util-events-to-acorn@2.0.3:
+    resolution: {integrity: sha512-jmsiEIiZ1n7X1Rr5k8wVExBQCg5jy4UXVADItHmNk1zkwEVhBuIUKRu3fqv+hs4nxLISi2DQGlqIOGiFxgbfHg==}
 
   micromark-util-html-tag-name@2.0.1:
     resolution: {integrity: sha512-2cNEiYDhCWKI+Gs9T0Tiysk136SnR13hhO8yW6BGNyhOC4qYFnwF1nKfD3HFAIXA5c45RrIG1ub11GiXeYd1xA==}
@@ -4608,12 +4605,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.2.1(astro@4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2))':
+  '@astrojs/mdx@4.2.2(astro@4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.1
       '@mdx-js/mdx': 3.1.0(acorn@8.14.1)
       acorn: 8.14.1
-      astro: 4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2)
+      astro: 4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2)
       es-module-lexer: 1.6.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -4641,16 +4638,16 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.2
 
-  '@astrojs/starlight@0.32.4(astro@4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2))':
+  '@astrojs/starlight@0.32.5(astro@4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2))':
     dependencies:
-      '@astrojs/mdx': 4.2.1(astro@4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2))
+      '@astrojs/mdx': 4.2.2(astro@4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2))
       '@astrojs/sitemap': 3.3.0
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2)
-      astro-expressive-code: 0.40.2(astro@4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2))
+      astro: 4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2)
+      astro-expressive-code: 0.40.2(astro@4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.4
@@ -5370,11 +5367,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/runtime@7.26.10':
+  '@babel/runtime@7.26.7':
     dependencies:
       regenerator-runtime: 0.14.1
 
-  '@babel/runtime@7.26.7':
+  '@babel/runtime@7.27.0':
     dependencies:
       regenerator-runtime: 0.14.1
 
@@ -5700,9 +5697,9 @@ snapshots:
     transitivePeerDependencies:
       - nx
 
-  '@nrwl/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.27)(nx@19.8.14)(typescript@5.8.2)':
+  '@nrwl/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.28)(nx@19.8.14)(typescript@5.8.2)':
     dependencies:
-      '@nx/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.27)(nx@19.8.14)(typescript@5.8.2)
+      '@nx/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.28)(nx@19.8.14)(typescript@5.8.2)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@swc-node/register'
@@ -5732,7 +5729,7 @@ snapshots:
       - '@swc/core'
       - debug
 
-  '@nx-dotnet/core@2.5.0(@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.27)(nx@19.8.14)(typescript@5.8.2))(nx@19.8.14)(prettier@3.5.3)':
+  '@nx-dotnet/core@2.5.0(@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.28)(nx@19.8.14)(typescript@5.8.2))(nx@19.8.14)(prettier@3.5.3)':
     dependencies:
       '@nx-dotnet/dotnet': 2.5.0(nx@19.8.14)
       '@nx-dotnet/utils': 2.5.0(nx@19.8.14)
@@ -5747,7 +5744,7 @@ snapshots:
       xmldoc: 1.3.0
       yargs-parser: 21.1.1
     optionalDependencies:
-      '@nx/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.27)(nx@19.8.14)(typescript@5.8.2)
+      '@nx/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.28)(nx@19.8.14)(typescript@5.8.2)
       prettier: 3.5.3
 
   '@nx-dotnet/dotnet@2.5.0(nx@19.8.14)':
@@ -5794,7 +5791,7 @@ snapshots:
       tslib: 2.8.1
       yargs-parser: 21.1.1
 
-  '@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.27)(nx@19.8.14)(typescript@5.8.2)':
+  '@nx/js@19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.28)(nx@19.8.14)(typescript@5.8.2)':
     dependencies:
       '@babel/core': 7.26.8
       '@babel/plugin-proposal-decorators': 7.25.9(@babel/core@7.26.8)
@@ -5803,7 +5800,7 @@ snapshots:
       '@babel/preset-env': 7.26.8(@babel/core@7.26.8)
       '@babel/preset-typescript': 7.26.0(@babel/core@7.26.8)
       '@babel/runtime': 7.26.7
-      '@nrwl/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.27)(nx@19.8.14)(typescript@5.8.2)
+      '@nrwl/js': 19.8.14(@babel/traverse@7.26.8)(@types/node@20.17.28)(nx@19.8.14)(typescript@5.8.2)
       '@nx/devkit': 19.8.14(nx@19.8.14)
       '@nx/workspace': 19.8.14
       babel-plugin-const-enum: 1.2.0(@babel/core@7.26.8)
@@ -5823,7 +5820,7 @@ snapshots:
       ora: 5.3.0
       semver: 7.7.1
       source-map-support: 0.5.19
-      ts-node: 10.9.1(@types/node@20.17.27)(typescript@5.8.2)
+      ts-node: 10.9.1(@types/node@20.17.28)(typescript@5.8.2)
       tsconfig-paths: 4.2.0
       tslib: 2.8.1
     transitivePeerDependencies:
@@ -6221,10 +6218,6 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@types/acorn@4.0.6':
-    dependencies:
-      '@types/estree': 1.0.7
-
   '@types/babel__core@7.20.5':
     dependencies:
       '@babel/parser': 7.26.8
@@ -6282,7 +6275,7 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
-  '@types/node@20.17.27':
+  '@types/node@20.17.28':
     dependencies:
       undici-types: 6.19.8
 
@@ -6292,7 +6285,7 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 20.17.27
+      '@types/node': 20.17.28
 
   '@types/unist@2.0.11': {}
 
@@ -6446,12 +6439,12 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.40.2(astro@4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2)):
+  astro-expressive-code@0.40.2(astro@4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2)):
     dependencies:
-      astro: 4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2)
+      astro: 4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2)
       rehype-expressive-code: 0.40.2
 
-  astro@4.16.18(@types/node@20.17.27)(rollup@4.34.6)(typescript@5.8.2):
+  astro@4.16.18(@types/node@20.17.28)(rollup@4.34.6)(typescript@5.8.2):
     dependencies:
       '@astrojs/compiler': 2.10.4
       '@astrojs/internal-helpers': 0.4.1
@@ -6507,8 +6500,8 @@ snapshots:
       tsconfck: 3.1.5(typescript@5.8.2)
       unist-util-visit: 5.0.0
       vfile: 6.0.3
-      vite: 5.4.14(@types/node@20.17.27)
-      vitefu: 1.0.5(vite@5.4.14(@types/node@20.17.27))
+      vite: 5.4.14(@types/node@20.17.28)
+      vitefu: 1.0.5(vite@5.4.14(@types/node@20.17.28))
       which-pm: 3.0.1
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
@@ -7551,7 +7544,7 @@ snapshots:
 
   i18next@23.16.8:
     dependencies:
-      '@babel/runtime': 7.26.10
+      '@babel/runtime': 7.27.0
 
   iconv-lite@0.4.24:
     dependencies:
@@ -8156,27 +8149,26 @@ snapshots:
       micromark-util-combine-extensions: 2.0.1
       micromark-util-types: 2.0.2
 
-  micromark-extension-mdx-expression@3.0.0:
+  micromark-extension-mdx-expression@3.0.1:
     dependencies:
       '@types/estree': 1.0.7
       devlop: 1.1.0
-      micromark-factory-mdx-expression: 2.0.2
+      micromark-factory-mdx-expression: 2.0.3
       micromark-factory-space: 2.0.1
       micromark-util-character: 2.1.1
-      micromark-util-events-to-acorn: 2.0.2
+      micromark-util-events-to-acorn: 2.0.3
       micromark-util-symbol: 2.0.1
       micromark-util-types: 2.0.2
 
-  micromark-extension-mdx-jsx@3.0.1:
+  micromark-extension-mdx-jsx@3.0.2:
     dependencies:
-      '@types/acorn': 4.0.6
       '@types/estree': 1.0.7
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
-      micromark-factory-mdx-expression: 2.0.2
+      micromark-factory-mdx-expression: 2.0.3
       micromark-factory-space: 2.0.1
       micromark-util-character: 2.1.1
-      micromark-util-events-to-acorn: 2.0.2
+      micromark-util-events-to-acorn: 2.0.3
       micromark-util-symbol: 2.0.1
       micromark-util-types: 2.0.2
       vfile-message: 4.0.2
@@ -8191,7 +8183,7 @@ snapshots:
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.3
       micromark-util-character: 2.1.1
-      micromark-util-events-to-acorn: 2.0.2
+      micromark-util-events-to-acorn: 2.0.3
       micromark-util-symbol: 2.0.1
       micromark-util-types: 2.0.2
       unist-util-position-from-estree: 2.0.0
@@ -8201,8 +8193,8 @@ snapshots:
     dependencies:
       acorn: 8.14.1
       acorn-jsx: 5.3.2(acorn@8.14.1)
-      micromark-extension-mdx-expression: 3.0.0
-      micromark-extension-mdx-jsx: 3.0.1
+      micromark-extension-mdx-expression: 3.0.1
+      micromark-extension-mdx-jsx: 3.0.2
       micromark-extension-mdx-md: 2.0.0
       micromark-extension-mdxjs-esm: 3.0.0
       micromark-util-combine-extensions: 2.0.1
@@ -8221,13 +8213,13 @@ snapshots:
       micromark-util-symbol: 2.0.1
       micromark-util-types: 2.0.2
 
-  micromark-factory-mdx-expression@2.0.2:
+  micromark-factory-mdx-expression@2.0.3:
     dependencies:
       '@types/estree': 1.0.7
       devlop: 1.1.0
       micromark-factory-space: 2.0.1
       micromark-util-character: 2.1.1
-      micromark-util-events-to-acorn: 2.0.2
+      micromark-util-events-to-acorn: 2.0.3
       micromark-util-symbol: 2.0.1
       micromark-util-types: 2.0.2
       unist-util-position-from-estree: 2.0.0
@@ -8285,9 +8277,8 @@ snapshots:
 
   micromark-util-encode@2.0.1: {}
 
-  micromark-util-events-to-acorn@2.0.2:
+  micromark-util-events-to-acorn@2.0.3:
     dependencies:
-      '@types/acorn': 4.0.6
       '@types/estree': 1.0.7
       '@types/unist': 3.0.3
       devlop: 1.1.0
@@ -9457,14 +9448,14 @@ snapshots:
 
   trough@2.2.0: {}
 
-  ts-node@10.9.1(@types/node@20.17.27)(typescript@5.8.2):
+  ts-node@10.9.1(@types/node@20.17.28)(typescript@5.8.2):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.17.27
+      '@types/node': 20.17.28
       acorn: 8.14.0
       acorn-walk: 8.3.4
       arg: 4.1.3
@@ -9636,18 +9627,18 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@5.4.14(@types/node@20.17.27):
+  vite@5.4.14(@types/node@20.17.28):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.1
       rollup: 4.34.6
     optionalDependencies:
-      '@types/node': 20.17.27
+      '@types/node': 20.17.28
       fsevents: 2.3.3
 
-  vitefu@1.0.5(vite@5.4.14(@types/node@20.17.27)):
+  vitefu@1.0.5(vite@5.4.14(@types/node@20.17.28)):
     optionalDependencies:
-      vite: 5.4.14(@types/node@20.17.27)
+      vite: 5.4.14(@types/node@20.17.28)
 
   volar-service-css@0.0.62(@volar/language-service@2.4.11):
     dependencies:
