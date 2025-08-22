@@ -22,10 +22,10 @@
   "devDependencies": {
     "@droidsolutions-oss/semantic-release-update-file": "^1.4.0",
     "@nx-dotnet/core": "^2.4.5",
-    "@nx/js": "19.8.14",
+    "@nx/js": "21.4.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "nx": "^19.6.6",
+    "nx": "^21.0.0",
     "prettier": "^3.3.3",
     "semantic-release": "^24.1.0"
   }
