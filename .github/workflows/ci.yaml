@@ -51,7 +51,7 @@ jobs:
 
       - name: Create coverage report
         if: ${{ hashFiles('dist/test-results/') != '' }}
-        uses: danielpalme/ReportGenerator-GitHub-Action@v5.4.5
+        uses: danielpalme/ReportGenerator-GitHub-Action@v5.4.12
         with:
           reports: './dist/test-results/**/coverage.cobertura.xml'
           targetdir: './dist/test-results/coverage'
@@ -59,7 +59,7 @@ jobs:
 
       - name: Publish Test Results
         if: ${{ hashFiles('dist/test-results/') != '' }}
-        uses: bibipkins/dotnet-test-reporter@v1.5.3
+        uses: bibipkins/dotnet-test-reporter@v1.5.4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           comment-title: 'Unit Test Results'
