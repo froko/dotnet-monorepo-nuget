@@ -32,7 +32,7 @@ jobs:
           token: ${{ steps.generate_token.outputs.token }}
 
       - name: Install .NET
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 8
 
